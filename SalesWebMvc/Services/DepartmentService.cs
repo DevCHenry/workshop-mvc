@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using SalesWebMvc.Models;
+using SalesWebMvc.Models.ViewModels;
 using System.Collections.Generic;
 
 namespace SalesWebMvc.Services
@@ -18,5 +19,6 @@ namespace SalesWebMvc.Services
         {
             return _context.Department.OrderBy(x => x.Name).ToList();
         }
+        
     }
 }
